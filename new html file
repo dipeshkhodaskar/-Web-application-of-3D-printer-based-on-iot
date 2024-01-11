@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css" >
+    a:link 
+    {
+        color:blue;
+
+    }
+    a:visited
+    {
+        color:brown;
+    }
+    a:hover
+    {
+        color:green;
+    }
+    a:active
+    {
+        color:red;
+
+    }
+    p:first-child
+    {
+        color:red;
+
+    }
+    p::first-letter
+    {
+        font-size:20px;
+        color:green;
+    }
+    p::selection
+    {
+        background-color:pink;
+        color:blue;
+    }
+    </style>
+
+</head>
+<body>
+<p>note Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam blanditiis est voluptatibus inventore corrupti, perferendis officiis at, nisi repellat repudiandae necessitatibus libero dolor. Placeat, dolorum illum voluptate vero nesciunt laborum?</p>
+<p>note Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam blanditiis est voluptatibus inventore corrupti, perferendis officiis at, nisi repellat repudiandae necessitatibus libero dolor. Placeat, dolorum illum voluptate vero nesciunt laborum?</p>
+<p>note Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam blanditiis est voluptatibus inventore corrupti, perferendis officiis at, nisi repellat repudiandae necessitatibus libero dolor. Placeat, dolorum illum voluptate vero nesciunt laborum?</p>
+<a href="overflow.html">over flow</a>
+<a href="link">click here</a>
+
+</body>
+
+</html>

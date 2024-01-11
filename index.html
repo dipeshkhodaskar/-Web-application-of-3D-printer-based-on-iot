@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="webapp/twoDView.css" type="text/css">
+  <link rel="stylesheet" href="webapp/threeDView.css" type="text/css">
+</head>
+
+<!--------------------------------------------------------------Body--------------------------------------------------------------->
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Project 3D Simulation</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!--a <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>Additive manufacturing <span>of 3D printer based</span> on IOT</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">Token Genrator</a></li>
+          <li><a class="nav-link" href="#resume">G-Code Editor</a></li>
+          <li><a class="nav-link" href="#services">G-Code generator</a></li>
+          <li><a class="nav-link" href="#portfolio">To Arduino</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://twitter.com/SaurabhGajbhi18" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+          </ul>
+        </nav>
+        <br>
+        <h3>3D Printer Simulator</h3>
+      </div>
+
+      <div class="jumbotron span12">
+        <p>
+        <div class="center-block lcd"></div>
+        </p>
+
+        <small><textarea class="field log" id="log" rows="12" cols="100" placeholder="Printer Log..."></textarea><small>
+      </div>
+
+      <div class="row marketing">
+
+
+
+        <div class="col-lg-6">
+          <div class="container">
+            <h4>Registration</h4>
+
+
+            <button type="button" class="btn   get-token btn-primary" aria-label="Left Align" data-toggle="tooltip"
+              data-placement="right" data-original-title="Show Existing Registration Code">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Get Token
+            </button>
+
+
+
+            <button type="button" class="btn   new-token btn-primary" aria-label="Left Align" data-toggle="tooltip"
+              data-placement="left" data-original-title="Get New Registration Code">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Token
+            </button>
+
+            <br>
+            <h4 class="text">Print</h4>
+            <button type="button" class="btn resume-print btn-primary" aria-label="Left Align" data-toggle="tooltip"
+              data-placement="right" data-original-title="Resume Print Job">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Resume
+            </button>
+
+            <button type="button" class="btn   pause-print btn-primary" aria-label="Left Align" data-toggle="tooltip"
+              data-placement="left" data-original-title="Pause Print Job">
+              <span class="glyphicon glyphicon-pause" aria-hidden="true"></span> Pause
+            </button>
+
+            <button type="button" class="btn   cancel-print btn-primary" aria-label="Left Align" data-toggle="tooltip"
+              data-placement="left" data-original-title="Cancel Print Job">
+              <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Cancel
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Health Check</h4>
+
+          <button type="button" class="btn   printer-online btn-primary" aria-label="Left Align" data-toggle="tooltip"
+            data-placement="right" data-original-title="Resume Health Check Ping">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Online
+          </button>
+
+          <button type="button" class="btn   printer-offline btn-primary" aria-label="Left Align" data-toggle="tooltip"
+            data-placement="left" data-original-title="Stop Health Check Ping">
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Offline
+          </button>
+          <br>
+          <h4>Local Print Job</h4>
+          <button type="button" class="btn   local-print btn-primary" aria-label="Left Align" data-toggle="tooltip"
+            data-placement="right" data-original-title="Start a local print job">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Local Print
+          </button>
+        </div>
+      </div>
+      <!-- End About Me -->
+  </section><!-- End About Section -->
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume ">
+    <div class="container">
+      <h1>G-Code editor</h1>
+      <p>
+        Paste your g-code in the left-hand window or drop a file on the page and see the preview of your tool path on
+        the right.<br>
+        The right-hand pane are interactive, drag them to change the point of view.
+      </p>
+      <div id="app">
+
+      </div>
+    </div>
+
+  </section><!-- End Resume Section -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container ">
+      <div id="paramsDiv" class="d-flex justify-content-center">
+        <form>
+          <table class="m-5">
+            <tr>
+              <td class="p-5">
+                <h5>G-code Header:</h5>
+                <textarea rows="7" cols="50" id='gheader'>
+                    M05 S0
+                    G90
+                    G1Z0
+                    G21
+                    G1 F3500
+                    G1  X0 Y0
+                    G4 P0
+                </textarea>
+              </td>
+              <td class="p-5">
+                <h5>G-code Footer:</h5>
+                <textarea rows="7" cols="50" id='gfooter'>
+                    G4 P0
+                    M05 S0
+                    G1 F3500
+                    G1 X0 Y0
+                    M30
+                </textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-5">
+                <h5>G-code Begin Jog:</h5>
+                <textarea rows="7" cols="50" id='gjog'>
+                  M05 S0
+                  G1 F3500
+                </textarea>
+              </td>
+              <td class="p-5">
+                <h5>G-code Begin Cut:</h5>
+                <textarea rows="7" cols="50" id='gcut'>
+                    M03 G1Z0 S1000
+                    G4 P0
+                    G1 F2000
+                </textarea>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <h4 class="text-center">Source image Resolution in dpi or dpcm: <input type="text" class="rounded-3"
+              id="resolution" value="600dpi" size="9" /></h4>
+          <input type="file" id="selectedFile" style="display: none" onclick='fileButtonClicked();'
+            onchange='loadImage();' />
+
+          <div class="text-center mt-4">
+            <input type="button" class="btn btn-primary" value="Select Image File and Start"
+              onclick="document.getElementById('selectedFile').click();" />
+          </div>
+
+        </form>
+      </div>
+
+      <div class="text-center mt-3 mb-5">
+        <h4 id="status">Status: Ready</h4><br />
+        <canvas id="canvas" width="500" height="200" style="border:1px solid #40404040;border-radius: 20px;"></canvas>
+      </div>
+      <div class="mt-5">
+        &nbsp;
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container  g-2">
+      <div class="d-flex justify-content-center g-2 m-3">
+        <h1>3D Printer Control Panel</h1>
+      </div>
+      <div class="bu m-5">
+        <div class="d-flex justify-content-center g-2 m-3">
+          <h3>Control Manually :</h3>
+        </div>
+<div class="border p-2">
+        <div class="row d-flex justify-content-center align-items-center g-2">
+           <h3 class="d-flex justify-content-center align-items-center p-2">X & Y Axis:</h3>
+        </div>
+        <div class="d-flex justify-content-center g-2 ">
+          <button id="btn-move-up" class="btn btn-dark" style="height: 50px; width: 50px;">^</button>
+        </div>
+        <div class="row d-flex justify-content-center g-2">
+          <div class="col-6 d-flex justify-content-end ">
+            <button id="btn-move-left" class="btn btn-dark mx-4" style="height: 50px; width: 50px;"><</button>
+          </div>
+          <div class="col-6">
+            <button id="btn-move-right" class="btn btn-dark mx-4" style="height: 50px; width: 50px;">></button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center g-2 ">
+          <button id="btn-move-down" class="btn btn-dark" style="height: 50px; width: 50px;">v</button>
+        </div>
+      </div>
+<div class="border p-2">
+        <div class="row d-flex flex-column justify-content-center align-items-center g-2">
+          <h3 class="d-flex justify-content-center align-items-center p-2">Z Axis:</h3>
+          <div class="col">
+            <div class="col d-flex justify-content-center ">
+              <button id="btn-move-left" class="btn btn-dark mx-4" style="height: 50px; width: 50px;">/\</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col d-flex justify-content-center ">
+              <button id="btn-move-left" class="btn btn-dark mx-4" style="height: 50px; width: 50px;">
+                \/</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row d-flex justify-content-between">
+        <!-- <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h3 class="mb-2">Temperature:</h3>
+          <input class="mb-2" type="range" min="0" max="250" value="0" class="slider" id="slider-temp">
+  
+          <p id="temp-value" style="font-size: 30px">0</p>
+  
+        </div> -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h3 class="mb-2">Temperature:</h3>
+          <input type="range" class="form-range" min="0" max="300" value="0" step="1" id="counter"
+            oninput="updateCounter(this.value)">
+          <p id="counter-value" style="font-size: 30px">0</p>
+          <h4>Optimal print temperature is between 250C and 285C.</h4>
+        </div>
+        <div class="col-md-6  d-flex justify-content-center">
+          <form method="POST" action="/gcode">
+            <h3 for="gcode" class="mb-2">Enter G-code commands:</h3><br>
+            <textarea type="text" class="form-control mb-2" name="gcode" id="gcode" rows="4"></textarea>
+            <button type="submit" class="btn btn-dark">Send</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </section><!-- End Portfolio Section -->
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>---</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>srbhgjbh@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+91 9096680389</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+  <!--------------------------------------------------------------All  Scripts--------------------------------------------------------------->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Template Main JS Files -->
+  <script src="print-simulator-master/js/bootstrap.min.js "></script>
+  <script src="print-simulator-master/js/faye-browser.js"></script>
+  <script src="print-simulator-master/js/printer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- 2D and 3D view JS Files -->
+  <script src="webapp/libs/require.js"></script>
+  <script src="webapp/config.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: 'webapp'
+    });
+  </script>
+  <script id="demoCode" type="application/gcode">G0 Y10 Z-5
+    G1 Z-10
+    G1 Y20
+    G02 X10 Y30 R10
+    G1 X30
+    G2 X40 Y20 R10
+    G1 Y10
+    G2 X30 Y0 R10
+    G1 X10
+    G2 X0 Y10 Z-15 R10 ( spiral )
+    G3 X-10 Y20 R-10 ( long arc )
+    G3 X0 Y10 I10 (center)
+    G91 G1 X10 Z10
+    G3 Y10 R5 Z3 (circle in incremental)
+    Y10 R5 Z3 (again, testing modal state)
+    G20 G0 X1 (one inch to the right)
+    G3 X-1 R1 (radius in inches)
+    G3 X1 Z0.3 I0.5 J0.5 (I,J in inches)
+    G21 (back to mm)
+    G80 X10 (do nothing)
+    G90
+    G0 X30 Y30 Z30
+    G18 (X-Z plane)
+    G3 Z40 I0 K5
+    G19 (Y-Z plane)
+    G3 Z50 J0 K5
+    G17 (back to X-Y plane)
+  </script>
+  <script>
+    require(['Ember', 'cnc/ui/graphicView', 'cnc/cam/cam', 'cnc/util', 'cnc/ui/gcodeEditor', 'cnc/gcode/gcodeSimulation', 'templates'],
+      function (Ember, GraphicView, cam, util, gcodeEditor, gcodeSimulation) {
+        var demoCode = $('#demoCode').text();
+
+        Ember.Handlebars.helper('num', function (value) {
+          return new Handlebars.SafeString(Handlebars.Utils.escapeExpression(util.formatCoord(value)));
+        });
+        Ember.TEMPLATES['application'] = Ember.TEMPLATES['camApp'];
+
+        window.Simulator = Ember.Application.create({
+          rootElement: '#app'
+        });
+
+        Simulator.GcodeEditorComponent = gcodeEditor.GcodeEditorComponent;
+        Simulator.GraphicView = GraphicView;
+
+        Simulator.ApplicationController = Ember.ObjectController.extend({
+          init: function () {
+            this._super();
+            var _this = this;
+            $(window).on('dragover', function (event) {
+              event.preventDefault();
+              event.dataTransfer.dropEffect = 'move';
+            });
+
+            $(window).on('drop', function (evt) {
+              evt.preventDefault();
+              evt.stopPropagation();
+              var files = evt.dataTransfer.files;
+              var file = files[0];
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                _this.set('code', e.target.result);
+                _this.launchSimulation();
+              };
+              reader.readAsText(file);
+            });
+            this.launchSimulation();
+          },
+          actions: {
+            simulate: function () {
+              this.launchSimulation();
+            },
+            loadBigSample: function () {
+              this.set('computing', true);
+              var _this = this;
+              require(['text!samples/aztec_calendar.ngc'], function (text) {
+                _this.set('code', text);
+                _this.launchSimulation();
+              });
+            }
+          },
+          launchSimulation: function () {
+            var _this = this;
+
+            function handleResult(result) {
+              _this.flushFragmentFile();
+              var errors = [];
+              for (var i = 0; i < result.errors.length; i++) {
+                var error = result.errors[i];
+                errors.push({ row: error.lineNo, text: error.message, type: "error" });
+              }
+              _this.set('errors', errors);
+              _this.set('bbox', { min: result.min, max: result.max });
+              _this.set('totalTime', result.totalTime);
+              _this.set('lineSegmentMap', result.lineSegmentMap);
+              _this.set('computing', false);
+              console.timeEnd('simulation');
+            }
+
+            console.time('simulation');
+            this.set('computing', true);
+            _this.set('lineSegmentMap', []);
+            this.get('simulatedPath').clear();
+            gcodeSimulation.parseInWorker(this.get('code'), new util.Point(0, 0, 0),
+              Ember.run.bind(_this, handleResult),
+              Ember.run.bind(_this, function (fragment) {
+                _this.get('fragmentFile').pushObject(fragment);
+                Ember.run.throttle(_this, _this.flushFragmentFile, 500);
+              }));
+          },
+          flushFragmentFile: function () {
+            this.get('simulatedPath').pushObjects(this.get('fragmentFile'));
+            this.get('fragmentFile').clear();
+          },
+          formattedTotalTime: function () {
+            var totalTime = this.get('totalTime');
+            var humanized = util.humanizeDuration(totalTime);
+            return { humanized: humanized, detailed: Math.round(totalTime) + 's' };
+          }.property('totalTime'),
+          currentHighLight: function () {
+            return this.get('lineSegmentMap')[this.get('currentRow')];
+          }.property('currentRow', 'lineSegmentMap').readOnly(),
+          code: demoCode,
+          errors: [],
+          bbox: {},
+          totalTime: 0,
+          lineSegmentMap: [],
+          currentRow: null,
+          simulatedPath: [],
+          computing: false,
+          fragmentFile: [],
+          canSelectLanguage: false,
+          usingGcode: true,
+          decorations: []
+        });
+      });
+  </script>
+  <script src="assets/js/voronoi.js"></script>
+  <!-- arduino code view JS Files -->
+  <script>
+    function updateCounter(value) {
+      document.getElementById("counter-value").innerHTML = value;
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#btn-move-up").click(function () {
+        $.get("arduino-serial.php", { data: "G1 Y10" }, function (result) {
+          console.log(result);
+        });
+      });
+
+      $("#btn-move-down").click(function () {
+        $.get("arduino-serial.php", { data: "G1 Y-10" }, function (result) {
+          console.log(result);
+        });
+      });
+
+      $("#btn-move-left").click(function () {
+        $.get("arduino-serial.php", { data: "G1 X-10" }, function (result) {
+          console.log(result);
+        });
+      });
+
+      $("#btn-move-right").click(function () {
+        $.get("arduino-serial.php", { data: "G1 X-10" }, function (result) {
+          console.log(result);
+        });
+      });
+
+      $("#slider-temp").change(function () {
+        var temp = $(this).val();
+        $.get("arduino-serial.php", { data: "M104 S" + temp }, function (result) {
+          console.log(result);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
